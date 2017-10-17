@@ -53,20 +53,27 @@ class Stacks
 }
 class StringReversal
 {
- public static void reverse(StringBuffer str)
- {
-     int n = str.length();
-     Stacks obj = new Stacks(n);  
-     // Push all characters of string 
-     int i;
-     for (i = 0; i < n; i++)
-        obj.push(str.charAt(i));   
-     // Pop all characters of string 
-     for (i = 0; i < n; i++)
-        { 
-          char ch = obj.pop();
-          str.setCharAt(i,ch);
-        }
- } 
+	public static void reverseString(StringBuffer str)
+	{
+		int n = str.length();
+		Stacks obj = new Stacks(n);  
+		// Push all characters of string 
+		int i;
+		for (i = 0; i < n; i++)
+			obj.push(str.charAt(i));   
+		// Pop all characters of string 
+		for (i = 0; i < n; i++)
+		{ 
+			char ch = obj.pop();
+			str.setCharAt(i,ch);
+		}
+	} 
+
+	public static void main(String args[])
+	{
+		StringBuffer  str= new StringBuffer("SimpleTests");
+		reverseString(str);
+		System.out.println("Reversed string : " + str);
+	}
 }
 
