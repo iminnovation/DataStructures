@@ -35,6 +35,23 @@ class SpecialStack extends Stack<Integer>
         return x;
     }
  
-
+    int fatchMin()
+    {
+        int x = min.pop();
+        min.push(x);
+        return x;
+    }
+ 
+    /* Main */
+    public static void main(String[] args) 
+    {
+        SpecialStack s = new SpecialStack();
+        s.push(20);
+        s.push(40);
+        s.push(60);
+        System.out.println(s.fatchMin());
+        s.push(80);
+        System.out.println(s.fatchMin());
+    }
     
 }
