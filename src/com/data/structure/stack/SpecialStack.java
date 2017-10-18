@@ -27,5 +27,14 @@ class SpecialStack extends Stack<Integer>
         }
     }
  
-   
+//Pop Operations
+    public Integer pop()
+    {
+        int x = super.pop();
+        min.pop();
+        return x;
+    }
+ 
+
+    
 }
