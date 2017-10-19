@@ -3,7 +3,7 @@ package com.data.structure.stack;
 import java.util.Stack;
 
 
-/*Auxiliarry stack */
+/*Auxiliary stack */
  
 class SpecialStack extends Stack<Integer>
 {
