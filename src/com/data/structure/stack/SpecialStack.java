@@ -20,10 +20,12 @@ class SpecialStack extends Stack<Integer>
             super.push(x);
             int y = min.pop();
             min.push(y);
-            if(x < y)
+            if(x < y){
                 min.push(x);
-            else
+            }
+            else{
                 min.push(y);
+            }
         }
     }
  
