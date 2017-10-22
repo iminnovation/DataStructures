@@ -10,7 +10,7 @@ LIFO, Last in First out data structure.
 Stack Complexities
  push(), pop(), isEmpty() all take O(1) time. 
  
- Auxiliary Stacks
+ Auxiliary Stack
  
 Refer : https://iminnovation.github.io/DataStructures/ 
 
