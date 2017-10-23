@@ -92,10 +92,14 @@ public class BalancedParentheses
 			return false;
 		} 
 	} 
-
-
-
-
-
-
+	public static void main(String[] args) 
+    {
+        char paranExp[] = {'(','{',')','}'};
+          if (isBalancedParenthesis(paranExp)){
+            System.out.println("Balanced");
+          }
+          else{
+            System.out.println("Unbalanced");  
+          }
+    }
 }
