@@ -39,5 +39,26 @@ public class BalancedParentheses
 			return (top == -1) ? true : false;
 		}
 	}
+	// Check and return true, if Parentheses are in pair with open n close.
+	static boolean isInPair(char char1, char char2)
+    {
+       if (char1 == '(' && char2 == ')'){
+         return true;
+       }
+       else if (char1 == '{' && char2 == '}'){
+         return true;
+       }
+       else if (char1 == '[' && char2 == ']'){
+         return true;
+       }
+       else{
+         return false;
+       }
+    }
+	
+	
+	
+	
+	
 
 }
