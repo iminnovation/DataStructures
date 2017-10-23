@@ -3,6 +3,7 @@ package com.data.structure.stack;
 import java.util.Stack;
 /*Auxiliary stack */
  
+@SuppressWarnings("serial")
 class SpecialStack extends Stack<Integer>
 {
     Stack<Integer> min = new Stack<>();
